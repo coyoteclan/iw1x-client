@@ -1,0 +1,5 @@
+build
+*.aps
+.vscode
+src/client/plugins/anticheat.cpp
+*.code-workspace
