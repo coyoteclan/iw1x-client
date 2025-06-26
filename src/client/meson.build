@@ -26,8 +26,8 @@ client_includes = include_directories(
   '../../submodules/imgui',
   '../../submodules/minhook/include',
   '../../submodules/rapidjson/include',
-  msvc_dir + '/VC/Tools/MSVC/14.43.34808/include',
-  msvc_dir + '/Windows Kits/10/Include/10.0.22621.0/um'
+  msvc_dir + '/VC/Tools/MSVC/14.44.35207/include',
+  msvc_dir + '/Windows Kits/10/Include/10.0.26100.0/um'
 )
 
 ########### Dependencies ###########
@@ -187,7 +187,7 @@ executable('iw1x', components + client_sources + resource,# client_headers, # Ap
   win_subsystem : 'windows',
   link_args : ['/DYNAMICBASE:NO', '/LAST:._text'],
 )
-"""
+'''
 shared_library('anticheat', files('./plugins/anticheat.cpp'),
   include_directories : client_includes,
   dependencies : [iw1x_dep, utils_dep, minhook_dep],
@@ -199,7 +199,7 @@ shared_library('anticheat', files('./plugins/anticheat.cpp'),
   name_prefix : '',
   name_suffix : 'dll'
 )
-"""
+'''
 
 shared_library('fixes', files('./plugins/fixes.cpp'),
   include_directories : client_includes,
