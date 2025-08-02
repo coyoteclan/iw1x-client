@@ -141,7 +141,7 @@ namespace imgui
 	void draw_menu()
 	{
 		menu_loads_settings();
-		ImGui::ShowMetricsWindow();
+		//ImGui::ShowMetricsWindow();
 
 		ImGui::SetNextWindowSize(ImVec2(500, 500));
 		ImGui::SetNextWindowPos(ImVec2(25, 80), ImGuiCond_FirstUseEver);
